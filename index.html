@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+
+		<!-- Main Css File -->
+		<link rel="stylesheet" href="Css/main.css" />
+		<!-- Normalize Css File -->
+		<link rel="stylesheet" href="css.normalize/normalize.css" />
+		<!-- JavaScript File -->
+		<script src="JavaScript/main.js" defer></script>
+
+		<!-- FontAwesome File -->
+		<link rel="stylesheet" href="fontawesome/css/all.css" />
+
+		<!-- Google Font **Ubuntu** -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+    <div class="container">
+      <div class="item">
+        <div class="inp-sear">
+          <input type="text" name="City-Name" id="city-name" placeholder="City Name">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="info">
+          <img src="images/clear.png" alt="icon-clear">
+          <span>22°c</span>
+          <p>casablanca</p>
+        </div>
+        <div class="footer">
+          <div class="foot-card humidty">
+						<div class="pic-count">
+							<img src="images/humidity.png" alt="humidity">
+							<p>53%</p>
+						</div>
+						<p>humidity</p>
+          </div>
+          <div class=" foot-card speed">
+						<div class="pic-count">
+							<img src="images/wind.png" alt="wind">
+							<p>5.66 km/h</p>
+						</div>
+						<p>wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
