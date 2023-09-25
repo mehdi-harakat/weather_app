@@ -43,18 +43,20 @@ async function getWeather(test) {
 		humidity.innerHTML = `${Math.round(resolve.main.humidity)}%`;
     speed.innerHTML = `${resolve.wind.speed}km/h`;
 
+		console.log(resolve.weather[0].main);
+
     if (resolve.weather[0].main === "Clear") {
-			weathIcon.src = '../images/clear.png';
+			weathIcon.src = 'images/clear.png';
 		} else if (resolve.weather[0].main === "Rain") {
-			weathIcon.src = '../images/rain.png';
+			weathIcon.src = 'images/rain.png';
 		} else if (resolve.weather[0].main === "Snow") {
-			weathIcon.src = '../images/snow.png';
+			weathIcon.src = 'images/snow.png';
 		} else if (resolve.weather[0].main === "Mist") {
-			weathIcon.src = '../images/mist.png';
+			weathIcon.src = 'images/mist.png';
 		} else if (resolve.weather[0].main === "Clouds") {
-			weathIcon.src = '../images/clouds.png';
+			weathIcon.src = 'images/clouds.png';
 		} else if (resolve.weather[0].main === "Drizzle") {
-			weathIcon.src = '../images/drizzle.png';
+			weathIcon.src = 'images/drizzle.png';
 		}
 	}).catch((reject) => {
     console.log(reject)
